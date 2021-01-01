@@ -1,6 +1,10 @@
-﻿using NAudio.Wave;
+﻿using DeepSpeechClient;
+using DeepSpeechClient.Interfaces;
+
+using NAudio.Wave;
 
 using System;
+using System.IO;
 
 namespace PackageRefIssue
 {
