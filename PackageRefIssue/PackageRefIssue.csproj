@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,8 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DeepSpeech" Version="0.9.3" />
     <PackageReference Include="NAudio" Version="1.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DeepSpeechClient">
+      <HintPath>$(USERPROFILE)\.nuget\packages\deepspeech\0.9.3\lib\net47\DeepSpeechClient.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
